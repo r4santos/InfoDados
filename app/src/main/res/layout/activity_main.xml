@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/azul_fundo">
+
+    <TextView
+        android:id="@+id/tv_informationApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10sp"
+        android:text="Informações App"
+        android:textColor="@color/verde_agua"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_informationApp"
+        android:hint="Digite seu nome:"
+        android:textSize="20sp"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/edt_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edt_name"
+        android:hint="Digite sua idade:"
+        android:textSize="20sp"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edt_age"
+        android:hint="Digite seu email:"
+        android:textSize="20sp"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/edt_cpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"
+        android:hint="Digite seu CPF:"
+        android:textSize="20sp"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_cpf"
+        android:text="Enviar"
+        android:textSize="20sp"
+        android:backgroundTint="@color/azul_agua" />
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_send"
+        android:textSize="20sp"
+        android:textColor="@color/verde_agua"
+        android:textAlignment="center"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
